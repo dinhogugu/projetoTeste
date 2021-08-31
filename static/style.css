@@ -1,0 +1,61 @@
+body{
+  overflow-x: hidden;
+}
+
+label{
+  margin-bottom: 0px !important;
+}
+
+.fundoDesenvolvedor{
+  background: rgb(10,10,33);
+  background: linear-gradient(152deg, rgba(10,10,33,1) 66%, rgba(33,33,80,1) 86%, rgba(11,2,32,1) 97%);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+}
+
+.btnNovo{
+    border: 0.1px solid #bbbbbb;
+    border-radius: 5px;
+    color: white;
+}
+
+.botaoAzul{
+    height: 39px;
+    color: white;
+    background: transparent linear-gradient(310deg, #255e80 0%, #004673 100%) 0% 0% no-repeat padding-box;
+}
+  
+.botaoAzul:hover{
+    background: transparent linear-gradient(310deg, #004673 0%, #112e3f 100%) 0% 0% no-repeat padding-box;
+    text-decoration:none;
+    border: 0.1px solid #bbbbbb;
+    border-radius: 5px;
+    color: white; 
+}
+.botaoVermelho{
+    height: 39px;
+    background: transparent linear-gradient(310deg, #682b19 0%, #bb1b1b 100%) 0% 0% no-repeat padding-box;
+}
+  
+.botaoVermelho:hover{
+    height: 39px;
+    background: transparent linear-gradient(310deg, #bb1b1b 0%, #682b19 100%) 0% 0% no-repeat padding-box;
+}
+
+/* -------------------------COR DA PAGINAÇÃO DESENVOLVEDORES------------------- */
+
+button.page-link{
+    background-color:#212529;
+    color:white;
+    border-radius: 2px;
+}
+
+.page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #212529 !important;
+    border-color: #dee2e6;
+}
