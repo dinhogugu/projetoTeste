@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Desenvolvedor from '@/pages/Desenvolvedor/Desenvolvedor'
-import CadastroDesenvolvedor from '@/pages/Desenvolvedor/CadastroDesenvolvedor'
+import ConfigDesenvolvedor from '@/pages/Desenvolvedor/ConfigDesenvolvedor'
 
 Vue.use(Router);
 
@@ -14,9 +14,9 @@ export default new Router({
       component: Desenvolvedor
     },
     {
-      path: '/cadastro_desenvolvedor/:id',
-      name: 'CadastroDesenvolvedor',
-      component: CadastroDesenvolvedor
+      path: '/ConfigDesenvolvedor/:id',
+      name: 'ConfigDesenvolvedor',
+      component: ConfigDesenvolvedor
     }
   ]
 })

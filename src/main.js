@@ -14,21 +14,15 @@ Vue.use(Vuex);
 
 var store = {
   state:{
-    usuario:"",
+    desenvolvedor:"sssss",
     aviso:""
   },
   getters:{
     getAviso:state =>{
       return state.aviso;
     },
-    getUsuario:state => {
-      return state.usuario;
-    }
   },
   mutations:{
-    setUsuario(state,param){
-      state.usuario = param; 
-    },
     setAviso(state,param){
       state.aviso = param; 
     }
@@ -41,7 +35,7 @@ Vue.use(ToastPlugin)
 //teste
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;
-// Vue.prototype.$url = "http://localhost/preventiva_git 09-08/ws/api2.php";
+Vue.prototype.$url = "http://127.0.0.1:8000/api";
 
 new Vue({
   el: '#app',

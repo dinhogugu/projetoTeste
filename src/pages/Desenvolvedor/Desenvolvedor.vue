@@ -1,13 +1,12 @@
 <template>
    <principal>
-      <div>
-         <div class="mt-5">
-            <h2 class="text-light mt-2">Desenvolvedores</h2>
-            <!-- <h5>Arraste o arquivo para o campo</h5> -->
+      <div class="">
+         <div>
+            <h2 class="text-light mt-5">Desenvolvedores</h2>
             <hr class="text-light"/>
          </div>
       </div>
-      <form class = "inputFiltro" @submit="cargaInicial">
+      <form class = "inputFiltro" @submit="direcionaForm()">
          <div class="d-flex justify-content-end mb-4">
             <b-form-select
                class="mr-2 w-25"
@@ -27,9 +26,9 @@
             </div>
          </div>
       </form>
-      <div class="overflow-auto">
+      <div class="">
          <b-table
-            table-variant="dark"
+            table-variant="light"
             id="table1"
             striped
             hover
@@ -39,16 +38,15 @@
             :fields="fields"
             responsive="sm"
             >
-            <template v-slot:cell(Id)="data">
-               <button v-if="usuarioLogado.departamento == 'Visualizador' ? false : true" class="btnNovo botaoAzul">
-                  <router-link :to="'/cadastro_usuario/' + data.value">
+            <template v-slot:cell(id)="data">
+               <button class="btnNovo botaoAzul">
+                  <router-link :to="'/ConfigDesenvolvedor/' + data.value">
                      <i class="fa fa-pencil text-light m-1" aria-hidden="true"></i>
                   </router-link>
                </button>
                <button
                   class="btnNovo botaoAmarelo"
                   v-on:click="deletarUsuario(data)"
-                  :hidden="usuarioLogado.departamento == 'Gerente' ? false : true"
                   >
                <i class="fa fa-trash-o text-light m-1" aria-hidden="true"></i>
                </button>
@@ -63,9 +61,8 @@
             ></b-pagination>
       </div>
       <router-link
-         :to="'/CadastroDesenvolvedor/' + usuarioTemp"
-         class="flutuar corpo botaoVermelho"
-         :hidden="usuarioLogado.departamento == 'Visualizador' ? true : false"
+         :to="'/ConfigDesenvolvedor/' + developerTemp"
+         class="flutuar corpo"
          >
          <b-icon icon="plus" font-scale="3" class="my-float"></b-icon>
       </router-link>
@@ -83,30 +80,30 @@
          selectedFilter: "todos",
          optionsFilter: [
            { value: "todos", text: "Todos" },
+           { value: "id", text: "Id" },
            { value: "nome", text: "Nome" },
            { value: "sexo", text: "Sexo" },
            { value: "idade", text: "Idade" },
-           { value: "dataNascimento", text: "Data de Nascimento" },
+           { value: "data_nascimento", text: "Data de Nascimento"},
            { value: "hobby", text: "Hobby" }
          ],
          valorFilter: "",
          items: [],
          fields: [
            { key: "nome", label: "Nome" },
-           { key: "Email", label: "Email" },
            { key: "sexo", label: "Sexo" },
            { key: "idade", label: "Idade" },
-           { key: "dataNascimento", label: "Data de Nascimento" },
+           { key: "data_nascimento", label: "Data de Nascimento" },
            { key: "hobby", label: "Hobby" },
-           { key: "Id", label: "" },
+           { key: "id", label: "" }
+           
          ],
-         perPage: 10,
+         perPage: 5,
          currentPage: 1,
          totalRows: 0,
          sortBy: "index",
          sortDesc: false,
-         usuarioTemp: 0,
-         usuarioLogado: "",
+         developerTemp: 0
        };
      },
      computed: {
@@ -121,77 +118,135 @@
        },
      },
      created() {
-       this.cargaInicial();
-       if (this.$store.getters.getAviso) {
-         this.$bvToast.toast(this.$store.getters.getAviso, {
-           title: "",
-           variant: "success",
-           solid: true,
-         });
-         this.$store.commit('setAviso',"");
-       }
+      //  this.cargaTotal();
      },
      methods: {
-       cargaInicial() {
+       cargaTotal() {
          this.$http
-           .post(this.$url, {
-             buscarUsuarios: {
-               autenticacao: {
-                 email: this.usuarioLogado.email,
-                 senha: this.usuarioLogado.senha,
-               },
-               dadosUsuarios: {
-                 filtro: this.selectedFilter,
-                 valorFiltro: this.valorFilter,
-               },
-             },
-           })
+           .get(this.$url + '/developer')
            .then((response) => {
              if (response.data.status) {
-               this.items = response.data.result;
-               this.totalRows = this.items.length;
-             } else {
-               console.log(response.data);
+                this.$bvToast.toast(response.data.mensagem, {
+                title: "200",
+                variant: "success",
+                solid: true,
+              });
+                this.items = response.data.result;
+                this.totalRows = this.items.length;
              }
            })
            .catch((e) => {
+             this.$bvToast.toast(' ' + e, {
+                title: "404",
+                 variant: "danger",
+                 solid: true,
+              });
              //console.log(response);
-             console.log("nao te conexão para login  " + e);
+             console.log("nao tem conexão para login  " + e);
            });
        },
+        cargaVariaveisQueryString() {
+         this.$http
+           .get(this.$url +"/developer/queryParam/"+this.selectedFilter+'='+this.valorFilter)
+           .then((response) => {
+             if (response.data.status) {
+                this.$bvToast.toast(response.data.mensagem, {
+                  title: "200",
+                  variant: "success",
+                  solid: true,
+              });
+                this.items = response.data.result;
+                this.totalRows = this.items.length;
+             } else {
+               console.log(response.data);
+               this.$bvToast.toast(response.data.mensagem, {
+                  title: "404",
+                  variant: "danger",
+                  solid: true,
+              });
+             }
+           })
+           .catch((e) => {
+              this.$bvToast.toast(' '+ e, {
+                  title: "404",
+                  variant: "danger",
+                  solid: true,
+              });
+              console.log(response);
+           });
+       },
+       cargaId() {
+         this.$http
+           .get(this.$url +"/developer/idParam/"+this.valorFilter)
+           .then((response) => {
+             if (response.data.status) {
+                this.$bvToast.toast(response.data.mensagem, {
+                  title: "200",
+                  variant: "success",
+                  solid: true,
+              });
+                this.items = response.data.result;
+                this.totalRows = this.items.length;
+             } else {
+               this.$bvToast.toast(response.data.mensagem, {
+                  title: "404",
+                  variant: "danger",
+                  solid: true,
+              });
+             }
+           })
+           .catch((e) => {
+              this.$bvToast.toast(' ' + e, {
+                  title: "404",
+                  variant: "danger",
+                  solid: true,
+              });
+              console.log(response);
+           });
+       },
+       direcionaForm(){
+         if(this.selectedFilter == 'todos'){
+            this.cargaTotal();
+         }
+         if(this.selectedFilter != 'todos' && this.selectedFilter != 'id'){
+            this.cargaVariaveisQueryString();
+         }
+         if(this.selectedFilter == 'id'){
+           this.cargaId();
+         }
+       },
        deletarUsuario(param) {
-         let r = confirm("Tem certeza que deseja deletar o usuario?");
-         if (r == false) {
+         let deletar = confirm("Tem certeza que deseja deletar o usuario?");
+         if (deletar == false) {
            return;
          }
          this.$http
-           .post(this.$url, {
-             deletarUsuario: {
-               autenticacao: {
-                 email: this.usuarioLogado.email,
-                 senha: this.usuarioLogado.senha,
-               },
-               dadosUsuarios: {
-                 idUsuario: param.value,
-               },
-             },
-           })
+           .delete(this.$url + '/developer/deletarDesenvolvedor/'+param.value)
            .then((response) => {
              if (response.data.status) {
                this.items.splice(param.index, 1);
                this.totalRows = this.items.length;
-               this.$bvToast.toast(response.data.result, {
-                 title: "",
-                 variant: "danger",
+               this.$bvToast.toast(response.data.mensagem, {
+                 title: "204",
+                 variant: "success",
                  solid: true,
                });
                //alert(response.data.result);
              } else {
-               alert(response.data.result);
+                this.$bvToast.toast('Erro ao excluir', {
+                  title: "ERRO",
+                  variant: "danger",
+                  solid: true,
+               });;
              }
            })
            .catch((e) => {
-             console.log("nao te conexão para login  " + e);
+             console.log(e);
+             this.$bvToast.toast(' ' + e, {
+                  title: "404",
+                  variant: "danger",
+                  solid: true,
+               });;
            });
        },
      },
@@ -199,25 +254,5 @@
 </script>
 <style scoped>
 
-/* ---------BOTAO CADASTRAR DESENVOLVEDOR----------- */
-   .corpo {
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 18px;
-  background-color: #ccc;
-  }
-  .flutuar {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 20px;
-  right: 40px;
-  background-color: red;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: 2px 2px 3px #999;
-  }
-  .my-float {
-  margin-top: 5px;
-  }
+
 </style>
