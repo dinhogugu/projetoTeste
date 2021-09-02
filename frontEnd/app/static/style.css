@@ -1,0 +1,101 @@
+
+label{
+  margin-bottom: 0px !important;
+}
+
+
+.fundoDesenvolvedor{
+  background: rgb(26, 25, 27);
+  background: linear-gradient(152deg, rgb(29, 29, 32) 60%, rgb(44, 44, 56) 86%, rgb(44, 40, 53) 97%);
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  margin: 0;
+  padding: 20px;
+}
+.btnNovo{
+    border: 0.1px solid #bbbbbb;
+    border-radius: 5px;
+    color: white;
+}
+
+.botaoAzul{
+    height: 39px;
+    color: white;
+    background: transparent linear-gradient(310deg, #255e80 0%, #004673 100%) 0% 0% no-repeat padding-box;
+}
+  
+.botaoAzul:hover{
+    background: transparent linear-gradient(310deg, #004673 0%, #112e3f 100%) 0% 0% no-repeat padding-box;
+    text-decoration:none;
+    border: 0.1px solid #bbbbbb;
+    border-radius: 5px;
+    color: white; 
+}
+
+.botaoAmarelo{
+    height: 39px;
+    background: transparent linear-gradient(310deg, #9c2b09 0%, #fac056 100%) 0% 0% no-repeat padding-box;
+}
+  
+.botaoAmarelo:hover{
+    background: transparent linear-gradient(310deg, var(--unnamed-color-86c2a8) 0%, var(--unnamed-color-004673) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(310deg, #fac056 0%, #9c2b09 100%) 0% 0% no-repeat padding-box;
+    border: 0.1px solid #bbbbbb;
+    border-radius: 5px;
+    color: white; 
+}
+
+.botaoVermelho{
+    height: 39px;
+    background: transparent linear-gradient(310deg, #682b19 0%, #bb1b1b 100%) 0% 0% no-repeat padding-box;
+}
+  
+.botaoVermelho:hover{
+    height: 39px;
+    background: transparent linear-gradient(310deg, #bb1b1b 0%, #682b19 100%) 0% 0% no-repeat padding-box;
+}
+
+/* -------------------------COR DA PAGINAÇÃO DESENVOLVEDORES------------------- */
+
+
+
+/* ---------BOTAO CADASTRAR DESENVOLVEDOR----------- */
+.corpo {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    background-color: #ccc;
+}
+.flutuar {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 40px;
+    background: transparent linear-gradient(310deg, #3d6e8a 0%, #004673 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+.my-float {
+    margin-top: 5px;
+}
+
+.flutuar:hover {
+    position: fixed;
+    width: 63px;
+    height: 63px;
+    bottom: 22px;
+    right: 43px;
+    background: transparent linear-gradient(310deg, #004673 0%, #112e3f 100%) 0% 0% no-repeat padding-box;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.toast:not(.showing):not(.show) {
+    opacity: 1;
+}
+
