@@ -1,6 +1,5 @@
-FROM node:lts-alpine
-WORKDIR /app
-COPY package*json ./
+FROM node:10-alpine
 RUN npm install
-EXPOSE 8080
-CMD ["npm","run","serve"]
+RUN npm run dev
+
+

@@ -38,7 +38,7 @@ class DesenvolvedorController extends Controller
             ->where('id','=',$valor)->get();
  
         if ($devSelectId->first() && is_numeric($valor)) {    
-             return response()->json(['status'=>1,'result'=>$devSelectId, 'mensagem'=>'Sucesso'],200);
+             return response()->json(['status'=>1,'result'=>$devSelectId, 'mensagem'=>'Sucesso']);
          }else{
              return response()->json(['mensagem' => 'Não encontrado']);
         }

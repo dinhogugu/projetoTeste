@@ -1,11 +1,11 @@
-version:'3'
+version: '3.8'
+
 services:
-    web:
-      build .
-      stdin_open: true
-      tty: true
-      ports: 
-        - "8080:8080"
+    app:
+      build: .
       volumes:
-        - "/app/node_modules"
-        - ".:/app"
+        - .:/app
+      working_dir: /app
+      ports:
+        - 8080:8080
+      command: ['npm','run','dev']

@@ -3,7 +3,6 @@
       <div>
          <div>
             <h2 class="text-light mt-5">{{tituloPagina}}</h2>
-            <!-- <h5>Arraste o arquivo para o campo</h5> -->
             <hr class="text-light"/>
          </div>
       </div>
@@ -44,7 +43,7 @@
                         maxlength="20"
                         />
                   </div>
-                  <div class="col-12 col-sm-12 col-md-8 col-lg-5 mt-2 mr-5">
+                  <div class="col-12 col-sm-12 col-md-8 col-lg-5 mt-2 mr-3">
                      <label class="mr-sm-2" for="inline-form-custom-select-pref">Data de Nascimento:</label>
                      <input
                         class="form-control mt-1"
@@ -131,7 +130,7 @@
            });
        },
 
-      // METODO RESPONSAVEL POR CADASTRAR O O DESENVOLVEDOR, INFORMACOES ENVIADAS VIA POST
+      // METODO RESPONSAVEL POR CADASTRAR O DESENVOLVEDOR, INFORMACOES ENVIADAS VIA POST
 
        cadastrarDesenvolvedor() {
          if(!this.nome || !this.idade || !this.sexo || !this.dataNascimento || !this.hobby){
@@ -139,7 +138,7 @@
                   title: "ERRO",
                   variant: "danger",
                   solid: true,
-                });
+            });
            return;
          }
          this.$http
@@ -186,10 +185,10 @@
        alterarDesenvolvedor() {
          if(!this.nome || !this.idade || !this.sexo || !this.dataNascimento || !this.hobby){
            this.$bvToast.toast('Por favor preencha todos os campos.', {
-                  title: "ERRO",
-                  variant: "danger",
-                  solid: true,
-                });
+              title: "ERRO",
+              variant: "danger",
+              solid: true,
+            });
            return;
          }
          this.$http
@@ -239,7 +238,7 @@
          }else{
            this.cadastrarDesenvolvedor();
          }    
-        },
+       },
      },
    };
 </script>
