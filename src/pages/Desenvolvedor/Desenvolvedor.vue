@@ -22,7 +22,7 @@
                aria-label="Server"/>
             <div>
                <button class="btnNovo botaoAzul">
-               Filtrar</button>
+               Buscar</button>
             </div>
          </div>
       </form>
@@ -46,7 +46,7 @@
                </button>
                <button
                   class="btnNovo botaoAmarelo"
-                  v-on:click="deletarUsuario(data)"
+                  v-on:click="deletarDesenvolvedor(data)"
                   >
                <i class="fa fa-trash-o text-light m-1" aria-hidden="true"></i>
                </button>
@@ -133,6 +133,12 @@
               });
                 this.items = response.data.result;
                 this.totalRows = this.items.length;
+             }else{
+               this.$bvToast.toast(response.data.mensagem, {
+                title: "ERRO",
+                variant: "danger",
+                solid: true,
+              });
              }
            })
            .catch((e) => {
@@ -160,7 +166,7 @@
              } else {
                console.log(response.data);
                this.$bvToast.toast(response.data.mensagem, {
-                  title: "404",
+                  title: "ERRO",
                   variant: "danger",
                   solid: true,
               });
@@ -189,7 +195,7 @@
                 this.totalRows = this.items.length;
              } else {
                this.$bvToast.toast(response.data.mensagem, {
-                  title: "404",
+                  title: "ERRO",
                   variant: "danger",
                   solid: true,
               });
@@ -215,8 +221,8 @@
            this.cargaId();
          }
        },
-       deletarUsuario(param) {
-         let deletar = confirm("Tem certeza que deseja deletar o usuario?");
+       deletarDesenvolvedor(param) {
+         let deletar = confirm("Tem certeza que deseja deletar o Desenvolvedor??");
          if (deletar == false) {
            return;
          }

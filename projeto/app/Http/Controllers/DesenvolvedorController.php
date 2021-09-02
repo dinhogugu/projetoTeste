@@ -13,6 +13,8 @@ class DesenvolvedorController extends Controller
        
        if ($devSelect->first()) {
             return response()->json(['status'=>1,'result'=>$devSelect, 'mensagem'=>'Sucesso']);
+        }else{
+            return response()->json(['result'=>$devSelect, 'mensagem'=>'Não encontrado']);
         }
         
     } 
