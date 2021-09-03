@@ -5,7 +5,7 @@
 # Visão Geral
 
 <div>
-  Projeto criado com intuito de mostrar o CRUD realizado pela API JSON REST usando os métodos GET,POST,PUT,DELETE
+  Projeto criado com intuito de mostrar o CRUD realizado pela API JSON REST usando os métodos GET,POST,PUT,DELETE.
 </div>
 
 # Tecnologias utilizadas
@@ -37,10 +37,10 @@
 
 <div>2-Crie uma pasta de projeto, ex: mkdir ProjetoVue, e insira este diretório: cd ProjetoVue.</div>
 
-<div>3-Instale o Vue.js usando o npm: "npm install vue" </div>
+<div>3-Instale o Vue.js usando o npm: "npm install vue". </div>
 
 </br>
-<div> Caso você já tenha o Vue.js instalado e configurado na sua máquina, ao clonar o respositório, entre na pasta "frontEnd/app" e execute o comando "npm install", após instalar as dependências, execute o "npm run server"
+<div> Caso você já tenha o Vue.js instalado e configurado na sua máquina, ao clonar o respositório, entre na pasta "frontEnd/app" e execute o comando "npm install", após instalar as dependências, execute o "npm run server".
 
 
 # Iniciando Laravel
@@ -51,11 +51,11 @@
 <div>2 -Também é necessário possuir o PHP configurado em seu computador.</div>
   
 <h3>Instalando o Laravel</h3>
-<div>1-Após ter o Composer instalado, iremos executar o seguinte comando: "composer global require laravel/installer"</div>
+<div>1-Após ter o Composer instalado, iremos executar o seguinte comando: "composer global require laravel/installer".</div>
 
 <div>2-Para criar um projeto em laravel digite: laravel new "nome-do-projeto".</div>
   
-<div>2-Para iniciar o projeto: "php artisan serve" </div>
+<div>2-Para iniciar o projeto: "php artisan serve". </div>
   
 </br>
 <div> Caso você já tenha o Laravel instalado e configurado na sua máquina, ao clonar o respositório, entre na pasta "backEnd/projeto" e execute o comando "composer install" que ele irá instalar todas as dependências.</div>
