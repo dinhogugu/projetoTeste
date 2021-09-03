@@ -6,7 +6,7 @@
             <hr class="text-light"/>
          </div>
       </div>
-      <form class = "inputFiltro" @submit="direcionaForm()">
+      <form @submit="direcionaForm()">
          <div class="d-flex justify-content-end mb-4">
             <b-form-select
                class="mr-2 w-25"
@@ -101,8 +101,6 @@
          perPage: 5,
          currentPage: 1,
          totalRows: 0,
-         sortBy: "index",
-         sortDesc: true,
          developerTemp: 0
        };
      },
@@ -116,9 +114,6 @@
            return false;
          }
        },
-     },
-     created() {
-      //  this.cargaTotal();
      },
      methods: {
 
