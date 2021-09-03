@@ -40,7 +40,7 @@ class DesenvolvedorController extends Controller
         if ($devSelectId->first() && is_numeric($valor)) {    
              return response()->json(['status'=>1,'result'=>$devSelectId, 'mensagem'=>'Sucesso']);
          }else{
-             return response()->json(['mensagem' => 'Não encontrado']);
+             return response()->json(['mensagem' => 'Não encontrado'])
         }
     }
 
