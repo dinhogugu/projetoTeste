@@ -62,11 +62,16 @@
     <img src="https://user-images.githubusercontent.com/67711103/131956124-4eb17bbe-aca1-4267-aeb6-d95fa5a7e451.png"/>
     
    <h3>GET</h3>
-  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/Nome=Hudson)</strong> e me retornou:
+  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/queryParam/Nome=Amy)</strong> e me retornou:</div>
  <img src="https://user-images.githubusercontent.com/67711103/131956956-e1a55384-c580-47d3-93a6-e6237583ec65.png"/>
-   
-    <h3>GET</h3>
-    <div>Outro exemplo de GET é passando o ID desejado para URL com isso, se sucesso, devolver o resultado daquele ID <strong>(http://127.0.0.1:8000/api/3)</strong></div>
     
+<h3>GET</h3>
+<div> Outro exemplo de GET é passando o ID desejado para URL com isso, se sucesso, devolver o resultado daquele ID <strong>(http://127.0.0.1:8000/api/idParam/3)</strong></div>
+<img src="https://user-images.githubusercontent.com/67711103/131957969-f43e43aa-31c4-4ea4-9f10-f61d710e4c76.png"/>
+  
+<h3>POST</h3>
+<div> Nesse exemplo, o método post foi usado para cadastrar um novo registro, no caso Desenvolvedor, para isso, foi criado uma tela de cadastro de Desenvolvedores onde irá ser inputado os dados e o mesmo enviara um json com os dados para o back-end</div>
+<img src="https://user-images.githubusercontent.com/67711103/131957969-f43e43aa-31c4-4ea4-9f10-f61d710e4c76.png"/>
+ 
 
 
