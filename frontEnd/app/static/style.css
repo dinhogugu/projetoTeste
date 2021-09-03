@@ -52,16 +52,6 @@ label{
     color: white; 
 }
 
-.botaoVermelho{
-    height: 39px;
-    background: transparent linear-gradient(310deg, #682b19 0%, #bb1b1b 100%) 0% 0% no-repeat padding-box;
-}
-  
-.botaoVermelho:hover{
-    height: 39px;
-    background: transparent linear-gradient(310deg, #bb1b1b 0%, #682b19 100%) 0% 0% no-repeat padding-box;
-}
-
 /* ---------BOTAO CADASTRAR DESENVOLVEDOR----------- */
 .corpo {
     font-family: Verdana, Geneva, sans-serif;

@@ -3,9 +3,7 @@
         <div class="container">
           <slot />
         </div>
-        <footer></footer>
-      </div>
-      
+    </div>   
 </template>
 <script>
 
