@@ -70,8 +70,10 @@
 <img src="https://user-images.githubusercontent.com/67711103/131957969-f43e43aa-31c4-4ea4-9f10-f61d710e4c76.png"/>
   
 <h3>POST</h3>
-<div> Nesse exemplo, o método post foi usado para cadastrar um novo registro, no caso Desenvolvedor, para isso, foi criado uma tela de cadastro de Desenvolvedores onde irá ser inputado os dados e o mesmo enviara um json com os dados para o back-end</div>
-<img src="https://user-images.githubusercontent.com/67711103/131957969-f43e43aa-31c4-4ea4-9f10-f61d710e4c76.png"/>
+<div> Nesse exemplo, o método post foi usado para cadastrar um novo registro, no caso Desenvolvedor, para isso, foi criado uma tela de cadastro de Desenvolvedores onde irá ser inputado os dados e o mesmo enviara um json com os dados para o back-end, para isso, basta clicar no botão de "+" no canto inferior direito! Todos os campos estão como obrigatório. Segue imagem tela de cadastro.</div>
+<img src="https://user-images.githubusercontent.com/67711103/131958745-450c39b8-2eaa-45ee-859c-6a427e47f994.png"/>
+  
+
  
 
 
