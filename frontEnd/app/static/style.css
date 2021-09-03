@@ -13,11 +13,17 @@ label{
   margin: 0;
   padding: 20px;
 }
+
+/* --------------ESTRUTURA DO BOTAO--------------- */
+
 .btnNovo{
     border: 0.1px solid #bbbbbb;
     border-radius: 5px;
     color: white;
 }
+
+
+/* --------------COR DO BOTAO--------------- */
 
 .botaoAzul{
     height: 39px;
@@ -45,20 +51,6 @@ label{
     border-radius: 5px;
     color: white; 
 }
-
-.botaoVermelho{
-    height: 39px;
-    background: transparent linear-gradient(310deg, #682b19 0%, #bb1b1b 100%) 0% 0% no-repeat padding-box;
-}
-  
-.botaoVermelho:hover{
-    height: 39px;
-    background: transparent linear-gradient(310deg, #bb1b1b 0%, #682b19 100%) 0% 0% no-repeat padding-box;
-}
-
-/* -------------------------COR DA PAGINAÇÃO DESENVOLVEDORES------------------- */
-
-
 
 /* ---------BOTAO CADASTRAR DESENVOLVEDOR----------- */
 .corpo {
@@ -94,6 +86,8 @@ label{
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
+
+/* ------------------NOTIFICACOES--------------- */
 
 .toast:not(.showing):not(.show) {
     opacity: 1;

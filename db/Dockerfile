@@ -1,2 +1,0 @@
-FROM mysql
-ENV MYSQL_DATABASE projeto_gazin
