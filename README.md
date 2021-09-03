@@ -78,7 +78,7 @@
   
 # Aplicação
   <h3>GET</h3>
-  <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end (<strong>http://127.0.0.1:8000/api/developer</strong>) para o mesmo devolver todos os registros que tem no banco de dados, no caso o parametro passado chama-se "todos" como na imagem abaixo:
+  <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end (<strong>http://127.0.0.1:8000/api/developer</strong>) para o mesmo devolver todos os registros que tem no banco de dados, no caso se o usuário colocar "todos" ele irá buscar todos os registros do banco de dados como na imagem abaixo:
     <img src="https://user-images.githubusercontent.com/67711103/131956124-4eb17bbe-aca1-4267-aeb6-d95fa5a7e451.png"/>
     
    <h3>GET</h3>
