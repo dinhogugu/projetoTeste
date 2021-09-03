@@ -59,12 +59,14 @@
 # Aplicação
   <h3>GET</h3>
   <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end (<strong>http://127.0.0.1:8000/api/developers</strong>) para o mesmo devolver todos os registros que tem no banco de dados, no caso o parametro passado chama-se "todos" como na imagem abaixo:
-    
     <img src="https://user-images.githubusercontent.com/67711103/131956124-4eb17bbe-aca1-4267-aeb6-d95fa5a7e451.png"/>
-    <h3>
-   <h3>GET>
-  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>http://127.0.0.1:8000/api/Nome=Hudson</strong>
+    
+   <h3>GET</h3>
+  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/Nome=Hudson)</strong> e me retornou:
  <img src="https://user-images.githubusercontent.com/67711103/131956956-e1a55384-c580-47d3-93a6-e6237583ec65.png"/>
+   
+    <h3>GET</h3>
+    <div>Outro exemplo de GET é passando o ID desejado para URL com isso, se sucesso, devolver o resultado daquele ID <strong>(http://127.0.0.1:8000/api/3)</strong></div>
     
 
 
