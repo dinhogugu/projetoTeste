@@ -58,15 +58,15 @@
   
 # Aplicação
   <h3>GET</h3>
-  <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end (<strong>http://127.0.0.1:8000/api/developers</strong>) para o mesmo devolver todos os registros que tem no banco de dados, no caso o parametro passado chama-se "todos" como na imagem abaixo:
+  <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end (<strong>http://127.0.0.1:8000/api/developer</strong>) para o mesmo devolver todos os registros que tem no banco de dados, no caso o parametro passado chama-se "todos" como na imagem abaixo:
     <img src="https://user-images.githubusercontent.com/67711103/131956124-4eb17bbe-aca1-4267-aeb6-d95fa5a7e451.png"/>
     
    <h3>GET</h3>
-  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/queryParam/Nome=Amy)</strong> e me retornou:</div>
+  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/developer/queryParam/Nome=Amy)</strong> e me retornou:</div>
  <img src="https://user-images.githubusercontent.com/67711103/131956956-e1a55384-c580-47d3-93a6-e6237583ec65.png"/>
     
 <h3>GET</h3>
-<div> Outro exemplo de GET é passando o ID desejado para URL com isso, se sucesso, devolver o resultado daquele ID <strong>(http://127.0.0.1:8000/api/idParam/3)</strong></div>
+<div> Outro exemplo de GET é passando o ID desejado para URL com isso, se sucesso, devolver o resultado daquele ID <strong>(http://127.0.0.1:8000/api/developer/idParam/3)</strong></div>
 <img src="https://user-images.githubusercontent.com/67711103/131957969-f43e43aa-31c4-4ea4-9f10-f61d710e4c76.png"/>
   
 <h3>POST</h3>
@@ -76,7 +76,11 @@
 <h3>PUT</h3>
 <div> O método PUT foi utilizado para atualizar os dados dos registros, ao clicar no icone : <img src="https://user-images.githubusercontent.com/67711103/131959614-e7ef06b0-0ccd-4ceb-b1a8-39d703fc1c73.png"/> o usuário será enviado para tela de alteração dos dados, onde os dados do registro selecionado já irão vir preenchidos bastando somente fazer a alteração e salvar.Segue imagem abaixo:</div>
  <img src="https://user-images.githubusercontent.com/67711103/131959861-77c9bf44-2811-437b-8fe1-3d55e0df50f5.png"/>
+  
+  <h3>DELETE</h3>
+  <div> O método DELETE como o próprio nome diz, permite excluir o registro selecionado, é enviado o ID do registro via URL (<strong>(http://127.0.0.1:8000/developer/deletarDesenvolvedor/3)</strong>) e se encontrado no banco, o registro é excluido basta clicar no icone <img src="https://user-images.githubusercontent.com/67711103/131996156-86440b72-4e35-46f1-aaf4-37b7a3538dc1.png"/></div>
 
+  <h4>OBS: Todas os processos explicados acima estão validados e trás notificações em caso de sucesso ou erro.</h4>
   
 
  
