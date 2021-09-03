@@ -48,7 +48,7 @@
 <h3>Pré-requisitos</h3>
 <div>1- Para iniciar o projeto em Laravel, é necessário instalar o composer, segue o link: https://www.hostinger.com.br/tutoriais/como-instalar-e-usar-o-composer</div>
 
-<div>2 -Também, é necessário possuir o PHP configurado em seu computador.</div>
+<div>2 -Também é necessário possuir o PHP configurado em seu computador.</div>
   
 <h3>Instalando o Laravel</h3>
 <div>1-Após ter o Composer instalado, iremos executar o seguinte comando: "composer global require laravel/installer"</div>
