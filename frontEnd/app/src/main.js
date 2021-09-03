@@ -11,23 +11,6 @@ import VueMask from "v-mask";
 
 Vue.use(VueMask);
 Vue.use(Vuex);
-
-// var store = {
-//   state:{
-//     aviso:""
-//   },
-//   getters:{
-//     getAviso:state =>{
-//       return state.aviso;
-//     },
-//   },
-//   mutations:{
-//     setAviso(state,param){
-//       state.aviso = param; 
-//     }
-//   }
-// }
-
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(ToastPlugin)
@@ -37,7 +20,6 @@ Vue.prototype.$url = "http://127.0.0.1:8000/api";
 
 new Vue({
   el: '#app',
-  // store: new Vuex.Store(store),
   router,
   components: { App },
   template: '<App/>'

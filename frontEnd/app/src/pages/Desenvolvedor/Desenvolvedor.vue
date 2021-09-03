@@ -102,7 +102,7 @@
          currentPage: 1,
          totalRows: 0,
          sortBy: "index",
-         sortDesc: false,
+         sortDesc: true,
          developerTemp: 0
        };
      },
@@ -265,7 +265,7 @@
            .catch((e) => {
              console.log(e);
              this.$bvToast.toast(' ' + e, {
-                  title: "404",
+                  title: "ERRO",
                   variant: "danger",
                   solid: true,
                });;
