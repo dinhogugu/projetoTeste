@@ -27,4 +27,19 @@
   <li>MySQL</li>
 </ul>
 
+# Iniciando Front-end
+
+<h3>Pré-requisitos</h3>
+<div>1- O requisito para iniciar o projeto em Vue, é necessário instalar o npm https://nodejs.org/en/download/ que é o gerenciador de pacotes do JavaScript.</div>
+
+<h3>Instalar o Vue.js</h3>
+<div>1-Abra uma linha de comando (ou seja, prompt de comando do Windows ou PowerShell).</div>
+
+<div>2-Crie uma pasta de projeto, ex: mkdir ProjetoVue, e insira este diretório: cd ProjetoVue.</div>
+
+<div>3-Instale o Vue.js usando o npm (Gerenciador de Pacotes do Node):</div>
+
+<img src=""/>
+
+
 
