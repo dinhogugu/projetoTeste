@@ -56,6 +56,12 @@
 <hr>
   
 # Aplicação
-  <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, como na imagem abaixo:
+  <h3>GET<h3>
+  <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end para o mesmo devolver todos os registros que tem no banco de dados, no caso o parametro passado chama-se "todos" como na imagem abaixo:
+    <img src="https://user-images.githubusercontent.com/67711103/131956124-4eb17bbe-aca1-4267-aeb6-d95fa5a7e451.png"/>
+    <h3>
+   <h3>GET>
+  <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados.
+    
 
 
