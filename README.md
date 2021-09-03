@@ -71,7 +71,11 @@
   
 <h3>POST</h3>
 <div> Nesse exemplo, o método post foi usado para cadastrar um novo registro, no caso Desenvolvedor, para isso, foi criado uma tela de cadastro de Desenvolvedores onde irá ser inputado os dados e o mesmo enviara um json com os dados para o back-end, para isso, basta clicar no botão de "+" no canto inferior direito! Todos os campos estão como obrigatório. Segue imagem tela de cadastro.</div>
-<img src="https://user-images.githubusercontent.com/67711103/131958745-450c39b8-2eaa-45ee-859c-6a427e47f994.png"/>
+<img src="https://user-images.githubusercontent.com/67711103/131959366-d8da727a-b75e-4925-baed-282977e06dc5.png"/>
+  
+<h3>PUT</h3>
+<div> O método PUT foi utilizado para atualizar os dados dos registros, ao clicar no icone .</div>
+<img src="https://user-images.githubusercontent.com/67711103/131959366-d8da727a-b75e-4925-baed-282977e06dc5.png"/>
   
 
  
