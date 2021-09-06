@@ -1,22 +1,26 @@
-FROM node:lts-alpine
+# buiildar
+FROM node:10-alpine as builder
 
-# instala um servidor http simples para servir conteúdo estático
-RUN npm install -g http-server
+WORKDIR /vue-ui
 
-# faz da pasta 'app' o diretório atual de trabalho
-WORKDIR /app
-
-# copia os arquivos 'package.json' e 'package-lock.json' (se disponível)
+# copia o package e instala dependencias
 COPY package*.json ./
-
-# instala dependências do projeto
 RUN npm install
 
-# copia arquivos e pastas para o diretório atual de trabalho (pasta 'app')
+# copia o resto dos arquivos
 COPY . .
 
-# compila a aplicação de produção com minificação
+# Build o projeto
 RUN npm run build
 
-EXPOSE 8080
-CMD [ "http-server", "dist" ]
+
+FROM nginx:alpine as production-build
+COPY ./.nginx/nginx.conf /etc/nginx/nginx.conf
+
+## remove a pagina defult do nginx
+RUN rm -rf /usr/share/nginx/html/*
+
+COPY --from=builder /vue-ui/dist /usr/share/nginx/html
+
+EXPOSE 80
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

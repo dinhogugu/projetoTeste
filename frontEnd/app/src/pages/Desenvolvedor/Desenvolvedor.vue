@@ -141,7 +141,7 @@
            })
            .catch((e) => {
              this.$bvToast.toast(' ' + e, {
-                title: "404",
+                title: "ERRO",
                  variant: "danger",
                  solid: true,
               });
@@ -175,11 +175,10 @@
            })
            .catch((e) => {
               this.$bvToast.toast(' '+ e, {
-                  title: "404",
+                  title: "ERRO",
                   variant: "danger",
                   solid: true,
               });
-              console.log(response);
            });
        },
 
@@ -207,11 +206,10 @@
            })
            .catch((e) => {
               this.$bvToast.toast(' ' + e, {
-                  title: "404",
+                  title: "ERRO",
                   variant: "danger",
                   solid: true,
               });
-              console.log(response);
            });
        },
 
