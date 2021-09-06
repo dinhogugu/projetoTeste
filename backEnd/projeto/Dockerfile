@@ -1,7 +1,7 @@
-# Set master image for php
+# Seta master image do php
 FROM php:8.0.0-alpine
 
-# Copy composer.lock e composer.json
+# Copia composer.lock e composer.json
 COPY composer.lock composer.json /var/www/html/
 
 # seta o diretorio
@@ -15,15 +15,15 @@ RUN docker-php-ext-enable pdo_mysql
 
 RUN docker-php-ext-enable pdo
 
-# Install PHP Composer
+# Instalar PHP Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 # Remove Cache
 RUN rm -rf /var/cache/apk/*
 
-# Copy existing application directory permissions
+# Copy aplicacao
 COPY --chown=www-data:www-data . /var/www/html
 
-# Expose port 9000 and start php-fpm server
+# Expose porta 8000 e start php-fpm server
 EXPOSE 8000
 CMD php artisan serve --host=0.0.0.0 --port=8000
