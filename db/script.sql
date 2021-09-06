@@ -11,4 +11,4 @@ CREATE TABLE IF NOT EXISTS desenvolvedores (
     PRIMARY KEY (id)
 );
 
-INSERT INTO desenvolvedores (id,nome,sexo,idade,hobby,data_nascimento) VALUES ('0','DEUCERTOPOAR','Masculino','25','deucertoporra','2020-09-3');
+-- INSERT INTO desenvolvedores (id,nome,sexo,idade,hobby,data_nascimento) VALUES ('0','teste','teste','25','teste','2020-09-3');
