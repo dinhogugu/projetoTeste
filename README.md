@@ -51,9 +51,24 @@
 <div>Para criar a imagem do banco de dados, acesse a pasta db que é onde esta o arquivo "Dockerfile" do banco, após isso execute o comando <strong>"docker build -t mysql &nbsp ."</strong></div>
   
 <h3>Criando container</h3>
-<div>Nesse próximo passo, iremos precisar do arquivo <strong>"docker-compose.yml"</strong> que está na raiz do projeto, nele são unidas todas as informações das imagens e executando todas em um container. Para maior entendimento, segue configurações desse arquivo abaixo:</div>
+<div>Nesse próximo passo, iremos precisar do arquivo <strong>"docker-compose.yml"</strong> que está na raiz do projeto, nele são unidas todas as informações das imagens e o nome do container que vai ser utilizado para cada imagem e executando todas de uma só vez. Para maior entendimento, segue configurações desse arquivo abaixo:</div>
  
-<img src="imagemDockeryml](https://user-images.githubusercontent.com/67711103/132384196-438b8f41-b784-44c5-bdd0-ad0e3bc8be78.png"/>
+<img src="https://user-images.githubusercontent.com/67711103/132384761-4158dfff-e0c5-4bef-b253-2348be9c731d.png"/>
+
+<div>1 - Primeiramente foi definido a versão do compose.</div>
+<div>2 - em seguida foi colocado a informação services, pois é onde vão estar as informações dos serviços que irão ser executado nesse container.</div>
+<div>3 - Foi definido os serviços como db, frontend, backend esses nomes são totalmente de sua escolha, serve pra se orientar dentro do arquivo, neles são definidos as configurações, abaixo as explicações das configurações:</div>
+  </br>
+  <ul>
+    <li>image: o nome da imagem que foi criada.</li>
+    <li>container_name: nome do container de sua escolha.</li>
+    <li>environment: configuracoes, ex: configurações do banco de dados.</li>
+    <li>volumes: serve pra guardar as informações, quando um container é removido suas informações são perdidas, o volume serve para persistir as informações, ex: persistir as informações de um banco de dados.</li>
+    <li>restart: esta sendo utilizado "always" caso aconteça algum problema, o docker sempre irá dar um "restart" no serviço.</li>
+    <li>tty: entrada e saida de dados, terminal, está definido como true.</li>
+    <li>ports: porta que o serviço irá utilizar.</li>
+    <li>depends_on: é uma dependência expressa entre os serviços.</li>
+  </ul>
 
 
 
