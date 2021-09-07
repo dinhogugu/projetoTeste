@@ -104,24 +104,24 @@
 <div>No arquivo do vue em frontEnd/app/src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 </br>
-<h4>Métodos usados em frontEnd/app/src/Desenvolvedor.vue:</h4>
+<div>Métodos usados em frontEnd/app/src/Desenvolvedor.vue:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132400654-de640c9f-eb07-4a53-a184-808b709d2207.png"/>
 </br>
-<h4>Métodos usados no cadastro e alteração de dados em frontEnd/app/src/ConfigDesenvolvedor.vue:</h4>
+<div>Métodos usados no cadastro e alteração de dados em frontEnd/app/src/ConfigDesenvolvedor.vue:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132401045-4d009724-081e-47be-aa7c-39d4a3d58e71.png"/>
 </br>
 <h3>Laravel</h3>
-<h4>Ao chamar um método no Vue ele vai direto nas rotas do laravel "backEnd/projeto/routes/api.php", onde mostra o direcionamento, veja as rotas abaixo:</h4>
+<div>Ao chamar um método no Vue ele vai direto nas rotas do laravel "backEnd/projeto/routes/api.php", onde mostra o direcionamento, veja as rotas abaixo:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132401414-46bfd763-6924-4566-9ca8-f18895260a21.png"/>
 </br>
-<h4>Foi criado um model "backEnd/projeto/app/Models/Desenvolvedor.php" onde foi configurado algumas informações e será usado pela Controller, segue imagem abaixo:</h4>
+<div>Foi criado um model "backEnd/projeto/app/Models/Desenvolvedor.php" onde foi configurado algumas informações e será usado pela Controller, segue imagem abaixo:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132402096-6e033b1b-253a-4cde-a2c3-5186b7e6aae6.png"/>
 </br>
-<h4>E por último, temos as validações do back-end em "backEnd/projeto/app/Http/Controllers/DesenvolvedorController.php, onde o VUE manda os dados, a rota direciona para a classe na controller onde é executado o método, segue imagem abaixo:</h4>
+<div>E por último, temos as validações do back-end em "backEnd/projeto/app/Http/Controllers/DesenvolvedorController.php, onde o VUE manda os dados, a rota direciona para a classe na controller onde é executado o método, segue imagem abaixo:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132402799-ce66ad49-d375-4635-9dd1-36be3d6bd77a.png"/>
 
