@@ -79,14 +79,6 @@
   <div> A aplicação foi montada em uma tela com dois inputs um sendo o campo do registro e a outra o registro que ira ser passado, a ideia é mandar uma requisição via GET para o back-end (<strong>http://127.0.0.1:8000/api/developer</strong>) para o mesmo devolver todos os registros que tem no banco de dados, no caso se o usuário colocar "todos" ele irá buscar todos os registros do banco de dados como na imagem abaixo:
 </br>
     <img src="https://user-images.githubusercontent.com/67711103/131956124-4eb17bbe-aca1-4267-aeb6-d95fa5a7e451.png"/>
-</br>
-<div>Estrutura codigo para melhor entendimento:</div>
-</br>
-<div>No arquivo do vue em src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar a estrutura:</div>
-</br>
-<img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
-<div> Essa variavel é chamada no metodo em src/pages/Desenvolvedor:</div>
-
    <h3>GET</h3>
   <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/developer/queryParam/Nome=Amy)</strong> e me retornou:</div>
  <img src="https://user-images.githubusercontent.com/67711103/131956956-e1a55384-c580-47d3-93a6-e6237583ec65.png"/>
@@ -105,6 +97,11 @@
   
   <h3>DELETE</h3>
   <div> O método DELETE como o próprio nome diz, permite deletar o registro selecionado, é enviado o ID do registro via URL <strong>(http://127.0.0.1:8000/developer/deletarDesenvolvedor/3)</strong> e se encontrado no banco, o registro é excluido basta clicar no icone <img src="https://user-images.githubusercontent.com/67711103/131996156-86440b72-4e35-46f1-aaf4-37b7a3538dc1.png"/></div>
+ 
+# Estrutura do código
+<div>No arquivo do vue em src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
+</br>
+<img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 
   <h4>OBS: Todas os processos explicados acima estão validados e trás notificações em caso de sucesso ou erro.</h4>
   
