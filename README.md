@@ -52,7 +52,7 @@
   
 <h3>Criando container</h3>
 <div>Nesse próximo passo, iremos precisar do arquivo <strong>"docker-compose.yml"</strong> que está na raiz do projeto, nele são unidas todas as informações das imagens e executando todas em um container. Para maior entendimento, segue configurações desse arquivo abaixo:</div>
- </br>
+ 
 <img src="imagemDockeryml](https://user-images.githubusercontent.com/67711103/132384196-438b8f41-b784-44c5-bdd0-ad0e3bc8be78.png"/>
 
 
