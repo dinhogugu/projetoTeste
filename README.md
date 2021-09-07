@@ -5,13 +5,18 @@
 # Visão Geral
 
 <div>
-  Projeto criado com intuito de mostrar o CRUD realizado pela API JSON REST usando os métodos GET,POST,PUT,DELETE.
+  Projeto criado com intuito de mostrar o CRUD realizado pela API JSON REST usando os métodos GET, POST, PUT, DELETE e a dockerização do mesmo.
 </div>
 
 # Tecnologias utilizadas
 <h3>Back-end</h3>
 <ul>
   <li>Laravel</li>
+</ul>
+
+<h3>Ambiente Virtualização</h3>
+<ul>
+  <li>Docker</li>
 </ul>
 
 <h3>Front-end</h3>
@@ -26,6 +31,29 @@
 <ul>
   <li>MySQL</li>
 </ul>
+
+# Iniciando projeto com Docker
+<h3>Pré-requisitos</h3>
+<div>1- Para iniciar o projeto com Docker, primeiro é necessário fazer a instalação do mesmo, segue o link: https://www.docker.com/products/docker-desktop</div>
+
+<h3>Criando imagem front-end</h3>
+<div> Para criar a imagem do vue.js acesse a pasta frontEnd/app que é onde esta o arquivo "Dockerfile" e execute o comando: <strong>"docker build -t vue-ui &nbsp ."</strong>
+  <h4>Observação</h4>
+</div>O comando acima irá criar uma imagem, a flag "-t" significa tag, indica que estamos dando um nome a imagem, vai ajudar a identificar a imagem mais facilmente esse nome é totalmente escolhido por você, no caso esta sendo usado o nome "vue-ui".
+<div>O ponto no final, significa que o contexto para gerar imagem vai ser da pasta que esta executando o comando no momento, como a imagem sendo construída na pasta atual.</div>
+<div> Para poder verificar a imagem criada, digite <strong>"docker image ls"</strong>
+<div>O arquivo Dockerfile citado, é um arquivo Docker, necessário para criar a imagem, nele são passados comandos para serem executados no momento da criação da imagem.</div>
+  
+<h3>Criando imagem back-end</h3>
+<div>Para criar imagem do laravel acesse a pasta backEnd/projeto que é onde esta o "Dockerfile" e execute o comando <strong>"docker build -t my-laravel-image &nbsp ."</strong></div>
+  
+<h3>Criado imagem banco de dados MySQL</h3>
+<div>Para criar a imagem do banco de dados, acesse a pasta db que é onde esta o arquivo "Dockerfile" do banco, após isso execute o comando <strong>"docker build -t mysql &nbsp ."</strong></div>
+  
+<h3>Criando container</h3>
+<div>Nesse próximo passo, iremos pegar todas as imagens criadas e colocar todas em um container docker, para isso, iremos precisar do arquivo <strong>"docker-compose.yml"</strong> que está na raiz do projeto.
+
+
 
 # Iniciando Vue.js
 
