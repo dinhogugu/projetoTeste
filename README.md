@@ -99,13 +99,18 @@
   <div> O método DELETE como o próprio nome diz, permite deletar o registro selecionado, é enviado o ID do registro via URL <strong>(http://127.0.0.1:8000/developer/deletarDesenvolvedor/3)</strong> e se encontrado no banco, o registro é excluido basta clicar no icone <img src="https://user-images.githubusercontent.com/67711103/131996156-86440b72-4e35-46f1-aaf4-37b7a3538dc1.png"/></div>
  
 # Estrutura do código
-<div>No arquivo do vue em src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
+<div>No arquivo do vue em frontEnd/app/src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 </br>
-<h4>Métodos usados na busca de dados em frontEnd/app/Desenvolvedor.vue:</h4>
+<h4>Métodos usados na busca de dados em frontEnd/app/src/Desenvolvedor.vue:</h4>
 </br>
-<img/>
+<img src="https://user-images.githubusercontent.com/67711103/132400654-de640c9f-eb07-4a53-a184-808b709d2207.png"/>
+</br>
+<h4>Métodos usados no cadastro e alteração de dados em frontEnd/app/src/ConfigDesenvolvedor.vue:</h4>
+</br>
+<img src="https://user-images.githubusercontent.com/67711103/132400654-de640c9f-eb07-4a53-a184-808b709d2207.png"/>
+
 
   
 
