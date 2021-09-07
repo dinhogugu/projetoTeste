@@ -123,7 +123,7 @@
 </br>
 <h4>E por último, temos as validações do back-end em "backEnd/projeto/app/Http/Controllers/DesenvolvedorController.php, onde o VUE manda os dados, a rota direciona para a classe na controller onde é executado o método, segue imagem abaixo:</h4>
 </br>
-<img src=""/>
+<img src="https://user-images.githubusercontent.com/67711103/132402799-ce66ad49-d375-4635-9dd1-36be3d6bd77a.png"/>
 
 
   
