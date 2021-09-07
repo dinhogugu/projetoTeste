@@ -104,7 +104,7 @@
 <div>No arquivo do vue em frontEnd/app/src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 </br>
-<h4>Métodos usados na busca de dados em frontEnd/app/src/Desenvolvedor.vue:</h4>
+<h4>Métodos usados em frontEnd/app/src/Desenvolvedor.vue:</h4>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132400654-de640c9f-eb07-4a53-a184-808b709d2207.png"/>
 </br>
