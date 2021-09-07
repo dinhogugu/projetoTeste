@@ -101,6 +101,7 @@
 # Estrutura do código
 <div>No arquivo do vue em frontEnd/app/src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 </br>
+<h3>VUE</h3>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 </br>
 <h4>Métodos usados na busca de dados em frontEnd/app/src/Desenvolvedor.vue:</h4>
@@ -110,6 +111,10 @@
 <h4>Métodos usados no cadastro e alteração de dados em frontEnd/app/src/ConfigDesenvolvedor.vue:</h4>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132401045-4d009724-081e-47be-aa7c-39d4a3d58e71.png"/>
+</br>
+<h3>Laravel</h3>
+
+
 
 
   
