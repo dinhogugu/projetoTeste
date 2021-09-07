@@ -112,7 +112,7 @@
 <img src="https://user-images.githubusercontent.com/67711103/132399386-1f6d2dba-8f48-49d5-8e8b-efd6dc760863.png"/>
 </br>
 <strong>classe</strong>
-<img src=""/>
+<img src="https://user-images.githubusercontent.com/67711103/132399939-8f11126a-b705-48d1-a19a-21614a03137c.png"/>
   <h4>OBS: Todas os processos explicados acima estão validados e trás notificações em caso de sucesso ou erro.</h4>
   
 
