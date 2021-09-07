@@ -113,7 +113,9 @@
 <img src="https://user-images.githubusercontent.com/67711103/132401045-4d009724-081e-47be-aa7c-39d4a3d58e71.png"/>
 </br>
 <h3>Laravel</h3>
-<h4></h4>
+<h4>Ao chamar um método no Vue ele vai direto nas rotas do laravel, onde mostra o direcionamento, veja as rotas abaixo:</h4>
+</br>
+<img src="https://user-images.githubusercontent.com/67711103/132401414-46bfd763-6924-4566-9ca8-f18895260a21.png"/>
 
 
 
