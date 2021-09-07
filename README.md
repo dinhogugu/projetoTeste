@@ -71,57 +71,8 @@
   </ul>
 <div>4- execute o container com o comando: <strong>"docker-compose up -d"</strong>(a flag -d indica executar em background, deixando o terminal livre pra executar novos comandos).</div>
 <div>As as aplicações já estão rondando nas portas especificadas, por último será necessário criar o banco de dados e a tabela, para isso, acesse a pasta "db" la dentro tem um arquivo chamado "script.sql" nele está os comandos para criação do banco e tabela, abra o terminal e execute o comando:<strong>"docker exec -i mysql-container mysql -uroot -pprojeto_gazin <span>< db/script.sql</span>" </strong>(o comando "exec" significa que ira ser executado comandos dentro de um container que está rodando, a flag "-i" significa que estamos executando um comando no modo interativo, no caso permite que o processo leia todo script.sql e que o mesmo não vai ser finalizado até que seja concluido).</div>
-
-
-
-# Iniciando Vue.js
-
-<h3>Pré-requisitos</h3>
-<div>1- Para iniciar o projeto em Vue, é necessário instalar o npm https://nodejs.org/en/download/ que é o gerenciador de pacotes do JavaScript.</div>
-
-<h3>Instalar o Vue.js</h3>
-<div>1-Abra uma linha de comando (ou seja, prompt de comando do Windows ou PowerShell).</div>
-
-<div>2-Crie uma pasta de projeto, ex: mkdir ProjetoVue, e insira este diretório: cd ProjetoVue.</div>
-
-<div>3-Instale o Vue.js usando o npm: "npm install vue". </div>
-
 </br>
-<div> Caso você já tenha o Vue.js instalado e configurado na sua máquina, ao clonar o respositório, entre na pasta "frontEnd/app" e execute o comando "npm install", após instalar as dependências, execute o "npm run server".
-
-
-# Iniciando Laravel
-
-<h3>Pré-requisitos</h3>
-<div>1- Para iniciar o projeto em Laravel, é necessário instalar o composer, segue o link: https://www.hostinger.com.br/tutoriais/como-instalar-e-usar-o-composer</div>
-
-<div>2 -Também é necessário possuir o PHP configurado em seu computador.</div>
-  
-<h3>Instalando o Laravel</h3>
-<div>1-Após ter o Composer instalado, iremos executar o seguinte comando: "composer global require laravel/installer".</div>
-
-<div>2-Para criar um projeto em laravel digite: laravel new "nome-do-projeto".</div>
-  
-<div>2-Para iniciar o projeto: "php artisan serve". </div>
-  
 </br>
-<div> Caso você já tenha o Laravel instalado e configurado na sua máquina, ao clonar o respositório, entre na pasta "backEnd/projeto" e execute o comando "composer install" que ele irá instalar todas as dependências.</div>
-
-<div>Após ele ter instalado todas as dependências crie um banco de dados na sua maquina local, ex query: "CREATE DATABASE projeto_gazin".</div>
-<div> Em seguida verifique o seu arquivo ".env" se ele está com esse nome, caso ele esteja com o nome: "env.example" troca para ".env", abra o arquivo ".env", no meu caso usei o banco MySQL, meu env esta configurado da seguinte maneira:
-  <p>DB_CONNECTION=mysql</p>
-  <p>DB_HOST=127.0.0.1</p>
-  <p>DB_PORT=3306</p>
-  <p>DB_DATABASE=projeto_gazin</p>
-  <p>DB_USERNAME=root</p>
-  <p>DB_PASSWORD=</p>
-
-  </br>
-  <div> Também no inicio do arquivo ".env" verifique se o campo " APP_KEY= " está vazio, se o mesmo estiver vazio, rode o comando no terminal: "php artisan key:generate" para gerar a chave e com isso o sistema funcionará corretamente, caso não especificar essa informação nesse campo, o sistema irá acusar erro "500".
-  </br>
-  <div>Na pasta database foi criado uma migration que no caso é a tabela que foi usada, para cadastrar a tabela no banco de dados, rode o comando "php artisan migrate"</div>
-  <div>Após realizar todos esses procedimentos execute o comando para iniciar o projeto: "php artisan serve".</div>
-<hr>
   
 # Aplicação
   <h3>GET</h3>
