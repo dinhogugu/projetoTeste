@@ -102,6 +102,13 @@
 <div>No arquivo do vue em src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
+</br>
+<div>O método "cargaTotal" em "src/Desenvolvedores" é responsável por carregar todos os desenvolvedores, enviando a URL</div>
+</br>
+<img src="https://user-images.githubusercontent.com/67711103/132398538-3b2e43b0-31e9-4a56-9adc-e3f8610f8539.png"/>
+</br>
+<div>No laravel a url passada bate na rota da API, e é chamada a classe, conforme imagem abaixo:</div>
+<img src=""/>
 
   <h4>OBS: Todas os processos explicados acima estão validados e trás notificações em caso de sucesso ou erro.</h4>
   
