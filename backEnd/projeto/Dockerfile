@@ -24,6 +24,6 @@ RUN rm -rf /var/cache/apk/*
 # Copy aplicacao
 COPY --chown=www-data:www-data . /var/www/html
 
-# Expose porta 8000 e start php-fpm server
+# Expose porta 8000 e starta php-fpm server
 EXPOSE 8000
 CMD php artisan serve --host=0.0.0.0 --port=8000
