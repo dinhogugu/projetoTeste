@@ -56,7 +56,7 @@
 <img src="https://user-images.githubusercontent.com/67711103/132384761-4158dfff-e0c5-4bef-b253-2348be9c731d.png"/>
 
 <div>1 - Primeiramente foi definido a versão do compose.</div>
-<div>2 - em seguida foi colocado a informação services, pois é onde vão estar as informações dos serviços que irão ser executado nesse container.</div>
+<div>2 - em seguida foi colocado a informação services, pois é onde vão estar as informações dos serviços que irá ser executado nesse container.</div>
 <div>3 - Foi definido os serviços como db, frontend, backend esses nomes são totalmente de sua escolha, serve pra se orientar dentro do arquivo, neles são definidos as configurações, abaixo as explicações das configurações:</div>
   </br>
   <ul>
