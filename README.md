@@ -69,8 +69,8 @@
     <li>ports: porta que o serviço irá utilizar.</li>
     <li>depends_on: é uma dependência expressa entre os serviços.</li>
   </ul>
-<div>4- execute o container com o comando: <strong>"docker-compose up -d"</strong>(a flag -d indica executar em background, deixando o terminal livre pra executar novos comandos.</div>
-<div>as as aplicações já estão rondando nas portas especificadas, por último será necessário criar o banco de dados e a tabela, para isso, acesse a pasta "db" la dentro tem um arquivo chamado "script.sql" nele está os comandos para criação do banco e tabela, abra o terminal e execute o comando:<strong>"docker exec -i mysql-container mysql -uroot -pprojeto_gazin <span>< db/script.sql</span>" </strong>(o comando "exec" significa que ira ser executado comandos dentro de um container que está rodando, a flag "-i" significa que estamos executando um comando no modo interativo, no caso permite que o processo leia todo script.sql e que o mesmo não vai ser finalizado até que seja concluido.)</div>
+<div>4- execute o container com o comando: <strong>"docker-compose up -d"</strong>(a flag -d indica executar em background, deixando o terminal livre pra executar novos comandos).</div>
+<div>As as aplicações já estão rondando nas portas especificadas, por último será necessário criar o banco de dados e a tabela, para isso, acesse a pasta "db" la dentro tem um arquivo chamado "script.sql" nele está os comandos para criação do banco e tabela, abra o terminal e execute o comando:<strong>"docker exec -i mysql-container mysql -uroot -pprojeto_gazin <span>< db/script.sql</span>" </strong>(o comando "exec" significa que ira ser executado comandos dentro de um container que está rodando, a flag "-i" significa que estamos executando um comando no modo interativo, no caso permite que o processo leia todo script.sql e que o mesmo não vai ser finalizado até que seja concluido).</div>
 
 
 
