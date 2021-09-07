@@ -1,15 +1,6 @@
 version: "3.7"
 
 services:
-  www:
-    image: nginx:alpine
-    volumes:
-      - ./nginx/nginx.conf:/nginx/nginx.conf
-    ports:
-      - 81:80
-    depends_on:
-      - backend
-      - frontend
   db:
     image: mysql
     container_name: mysql-container
