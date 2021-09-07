@@ -103,15 +103,16 @@
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 </br>
-<div>O método "cargaTotal" em "frontEnd/app/src/page/Desenvolvedores" é responsável por carregar todos os desenvolvedores passando a URL</div>
+<div>O método "cargaTotal" em "frontEnd/app/src/page/Desenvolvedores.vue" é responsável por carregar todos os desenvolvedores passando a URL</div>
 </br>
 <img src="https://user-images.githubusercontent.com/67711103/132398538-3b2e43b0-31e9-4a56-9adc-e3f8610f8539.png"/>
 </br>
 <div>No laravel a url passada bate na rota da API e é chamada a classe, conforme imagem abaixo:</div>
+</br>
 <div><strong>Rota - "backEnd/routes/api.php"</strong></div>
 <img src="https://user-images.githubusercontent.com/67711103/132399386-1f6d2dba-8f48-49d5-8e8b-efd6dc760863.png"/>
 </br>
-<div><strong>classe</strong></div>
+<div><strong>classe - "backEnd/projeto/app/Http/DesenvolvedorController.php</strong></div>
 <img src="https://user-images.githubusercontent.com/67711103/132399939-8f11126a-b705-48d1-a19a-21614a03137c.png"/>
   <h4>OBS: Todas os processos explicados acima estão validados e trás notificações em caso de sucesso ou erro.</h4>
   
