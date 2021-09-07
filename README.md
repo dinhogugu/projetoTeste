@@ -84,8 +84,9 @@
 </br>
 <div>No arquivo do vue em src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar a estrutura:</div>
 </br>
-<img src="https://user-images.githubusercontent.com/67711103/132396459-9f38a92b-b1ef-4249-a588-b5b4c963ed88.png"/>
-    
+<img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
+<div> Essa variavel é chamada no metodo em src/pages/Desenvolvedor:</div>
+
    <h3>GET</h3>
   <div> A segunda demonstração do GET é passar o termo via querystring ou seja, passar os parametros que desejamos via URL para que o banco de dados nos retorne se houver os dados, o exemplo abaixo, foi passado via URL da seguinte maneira :  <strong>(http://127.0.0.1:8000/api/developer/queryParam/Nome=Amy)</strong> e me retornou:</div>
  <img src="https://user-images.githubusercontent.com/67711103/131956956-e1a55384-c580-47d3-93a6-e6237583ec65.png"/>
