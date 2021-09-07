@@ -99,9 +99,9 @@
   <div> O método DELETE como o próprio nome diz, permite deletar o registro selecionado, é enviado o ID do registro via URL <strong>(http://127.0.0.1:8000/developer/deletarDesenvolvedor/3)</strong> e se encontrado no banco, o registro é excluido basta clicar no icone <img src="https://user-images.githubusercontent.com/67711103/131996156-86440b72-4e35-46f1-aaf4-37b7a3538dc1.png"/></div>
  
 # Estrutura do código
-<div>No arquivo do vue em frontEnd/app/src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 </br>
 <h3>VUE</h3>
+<div>No arquivo do vue em frontEnd/app/src/main.js tem uma variavel global chamada $url = "https://127.0.0.1:8000/api"(url para enviar dados para o backend) na imagem abaixo podemos verificar:</div>
 <img src="https://user-images.githubusercontent.com/67711103/132397061-bced1b6c-2026-4ed2-8a49-e9cbce3a6683.png"/>
 </br>
 <h4>Métodos usados na busca de dados em frontEnd/app/src/Desenvolvedor.vue:</h4>
@@ -113,6 +113,7 @@
 <img src="https://user-images.githubusercontent.com/67711103/132401045-4d009724-081e-47be-aa7c-39d4a3d58e71.png"/>
 </br>
 <h3>Laravel</h3>
+<h4></h4>
 
 
 
