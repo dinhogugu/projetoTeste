@@ -109,7 +109,7 @@
 </br>
 <h4>Métodos usados no cadastro e alteração de dados em frontEnd/app/src/ConfigDesenvolvedor.vue:</h4>
 </br>
-<img src="https://user-images.githubusercontent.com/67711103/132400654-de640c9f-eb07-4a53-a184-808b709d2207.png"/>
+<img src="https://user-images.githubusercontent.com/67711103/132401045-4d009724-081e-47be-aa7c-39d4a3d58e71.png"/>
 
 
   
