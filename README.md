@@ -5,7 +5,7 @@
 # Visão Geral
 
 <div>
-  Projeto criado com intuito de mostrar o CRUD realizado pela API JSON REST usando os métodos GET, POST, PUT, DELETE e a dockerização do mesmo.
+  Projeto criado com intuito de mostrar o CRUD realizado pela API JSON REST usando os métodos GET, POST, PUT, DELETE, e também mostrar as aplicações rodando em docker.
 </div>
 
 # Tecnologias utilizadas
